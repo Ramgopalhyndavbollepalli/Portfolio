@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramgopalhyndav Bollepalli | DevOps Engineer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="path/to/favicon.png">
+</head>
+<body>
+    <!-- Header with Sidebar Toggle -->
+    <header>
+        <div class="menu-icon" onclick="toggleSidebar()">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
+    </header>
+
+<!-- Sidebar Navigation -->
+<aside id="sidebar">
+    <div class="sidebar-content">
+        <div class="close-icon" onclick="toggleSidebar()">
+            <i class="fas fa-times fa-2x"></i> <!-- Close icon -->
+        </div>
+        <div class="profile-picture">
+            <img src="profile.jpeg" alt="Profile Picture">
+        </div>
+        <h2>Ramgopalhyndav Bollepalli</h2>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
+</aside>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row">
+                <!-- Text Section -->
+                <div class="col-md-6">
+                    <div class="hero-text">
+                        <h1>Hello, I'm Ramgopalhyndav Bollepalli</h1>
+                        <p>
+                            <span id="typed-text"></span>
+                            <span class="cursor">|</span>
+                        </p>
+                        <a href="#about" class="btn btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+                <!-- Video Section -->
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <video autoplay loop muted controls id="myVideo" class="video-background" width="100%">
+                            <source src="Resume.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+  <!-- About Section -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Profile Image with floating effect -->
+            <div class="col-lg-6 mb-4">
+                <img src="profile.jpeg" alt="Profile Picture" class="img-fluid rounded-circle floating">
+            </div>
+            <!-- About Text -->
+            <div class="col-lg-6">
+                <h2>About Me</h2>
+                <p>I am a Master’s student in Computer Science at the University of North Carolina at Charlotte. I am passionate about DevOps, cloud computing, and solving complex technical problems. My expertise spans AWS services, Docker, Jenkins, full-stack development, and automation pipelines. I have experience working with multiple cloud platforms and managing infrastructure as code to help businesses scale efficiently.</p>
+                <a href="#resume" class="btn btn-primary">View My Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section id="resume" class="resume-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title" data-aos="fade-up">Resume</h2>
+
+        <!-- Education Section -->
+        <div class="row mt-5" data-aos="fade-right">
+            <div class="col-md-12">
+                <h3 class="section-subtitle">Education</h3>
+                <div class="resume-content">
+                    <div class="resume-item">
+                        <h4>University of North Carolina at Charlotte</h4>
+                        <p class="date">Aug 2023 - Dec 2024</p>
+                        <p>Masters in Computer Science | GPA: 4.0/4.0</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Koneru Lakshmaiah University</h4>
+                        <p class="date">Aug 2019 - Mar 2023</p>
+                        <p>Bachelors in Computer Science | GPA: 3.6/4.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Relevant Coursework Section -->
+        <div class="row mt-5" data-aos="fade-left">
+            <div class="col-md-12">
+                <h3 class="section-subtitle">Relevant Coursework</h3>
+                <ul class="tag-list">
+                    <li>Cloud Infrastructure and Services</li>
+                    <li>Cloud and Serverless Computing</li>
+                    <li>Continuous Delivery and DevOps</li>
+                    <li>Database Management</li>
+                    <li>Big Data Analytics for Competitive Advantage</li>
+                    <li>Operating Systems</li>
+                    <li>Algorithms and Data Structures</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="row mt-5" data-aos="fade-up">
+            <div class="col-md-12">
+                <h3 class="section-subtitle">Experience</h3>
+                <div class="resume-content">
+                    <div class="resume-item">
+                        <h4>Arete IT Services Private Limited</h4>
+                        <p class="date">Jul 2022 - Nov 2022</p>
+                        <p><strong>Full-Stack Developer Intern</strong></p>
+                        <ul class="sub-list">
+                            <li>Led development of real-time inventory management system, reducing out-of-stock incidents.</li>
+                            <li>Redesigned checkout process, reducing cart abandonment by 30%.</li>
+                            <li>Implemented a product search feature, increasing accuracy by 25%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        
+        <!-- Project Section -->
+<section id="projects" class="projects-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title mb-5" data-aos="fade-up">My Projects</h2>
+        
+        <!-- Project 1: Job Portal Deployment on AWS -->
+        <div class="row project-item mb-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12">
+                <div class="card shadow-sm border-0 mb-4">
+                    <!-- Carousel for Project Images -->
+                    <div id="carouselJobPortal" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="project1-img1.jpg" class="d-block w-100 rounded-top" alt="Job Portal AWS 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project1-img2.jpg" class="d-block w-100 rounded-top" alt="Job Portal AWS 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project1-img3.jpg" class="d-block w-100 rounded-top" alt="Job Portal AWS 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselJobPortal" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselJobPortal" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <!-- Project Description -->
+                    <div class="card-body">
+                        <h3 class="project-title">Job Portal Deployment on AWS</h3>
+                        <p><strong>Technologies:</strong> EC2, Elastic Beanstalk, MySQL, Java Backend</p>
+                        <button class="btn btn-primary btn-expand" data-bs-toggle="collapse" data-bs-target="#project1Details" onclick="startTypingEffect('project1DetailsText')">
+                            View More <i class="fas fa-angle-down"></i>
+                        </button>
+                        <div id="project1Details" class="collapse mt-3">
+                            <ul id="project1DetailsText" class="typing-text">
+                                <li>Resolved critical issues related to communication between the backend and the database, ensuring that data was properly redirected and displayed on the frontend, leading to improved data accuracy and faster page loads.</li>
+                                <li>Reduced manual errors by 90% through the integration of AWS EC2, Elastic Beanstalk, and Amazon MySQL, ensuring a smooth deployment process and stable operations.</li>
+                            </ul>
+                            <a href="https://github.com/Ramgopalhyndavbollepalli/JOB-PORTAL" target="_blank" class="btn btn-secondary mt-2">
+                                View on GitHub <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: 2048 Game Deployment -->
+        <div class="row project-item mb-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-12">
+                <div class="card shadow-sm border-0 mb-4">
+                    <!-- Carousel for Project Images -->
+                    <div id="carousel2048Game" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="project2.png" class="d-block w-100 rounded-top" alt="2048 Game AWS 1">
+                            </div>
+                          
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2048Game" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2048Game" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">2048 Game Deployment on AWS</h3>
+                        <p><strong>Technologies:</strong> AWS Beanstalk, Docker</p>
+                        <button class="btn btn-primary btn-expand" data-bs-toggle="collapse" data-bs-target="#project2Details" onclick="startTypingEffect('project2DetailsText')">
+                            View More <i class="fas fa-angle-down"></i>
+                        </button>
+                        <div id="project2Details" class="collapse mt-3">
+                            <ul id="project2DetailsText" class="typing-text">
+                                <li>Achieved a significant reduction of manual errors by 90% through the seamless integration of Docker containers, ensuring smooth deployment and operation of the game.</li>
+                                <li>Resolved critical real-time issues related to API communication between different components, resulting in an impressive uptime of 98% for the system.</li>
+                            </ul>
+                            <a href="https://github.com/Ramgopalhyndavbollepalli/Deploying-2048-Game-on-AWS-Beanstalk-with-Docker-File" target="_blank" class="btn btn-secondary mt-2">
+                                View on GitHub <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: Employee Database System -->
+        <div class="row project-item mb-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-12">
+                <div class="card shadow-sm border-0 mb-4">
+                    <!-- Carousel for Project Images -->
+                    <div id="carouselEmployeeDB" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="project3-1.jpg" class="d-block w-100 rounded-top" alt="Employee DB AWS 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project3-img2.jpg" class="d-block w-100 rounded-top" alt="Employee DB AWS 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project3-img3.jpg" class="d-block w-100 rounded-top" alt="Employee DB AWS 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEmployeeDB" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEmployeeDB" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Employee Database System</h3>
+                        <p><strong>Technologies:</strong> AWS RDS, EC2, S3</p>
+                        <button class="btn btn-primary btn-expand" data-bs-toggle="collapse" data-bs-target="#project3Details" onclick="startTypingEffect('project3DetailsText')">
+                            View More <i class="fas fa-angle-down"></i>
+                        </button>
+                        <div id="project3Details" class="collapse mt-3">
+                            <ul id="project3DetailsText" class="typing-text">
+                                <li>Enhanced data accessibility and retrieval efficiency by 40% through Amazon RDS, leading to faster decision-making processes.</li>
+                                <li>Reduced image storage costs by 30% using Amazon S3, optimizing resource allocation and adhering to DevOps principles for efficient resource management.</li>
+                                <li>Achieved a remarkable 99.9% uptime for the website hosted on Amazon EC2, ensuring uninterrupted service availability and quick deployment of updates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Pizza Ordering Chatbot -->
+        <div class="row project-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-12">
+                <div class="card shadow-sm border-0 mb-4">
+                    <div id="carouselPizzaChatbot" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="project4-img1.jpg" class="d-block w-100 rounded-top" alt="Pizza Ordering Chatbot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="project4-img2.jpg" class="d-block w-100 rounded-top" alt="Pizza Ordering Chatbot 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPizzaChatbot" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPizzaChatbot" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="project-title">Pizza Ordering Chatbot</h3>
+                        <p><strong>Technologies:</strong> AWS Lex, Lambda</p>
+                        <button class="btn btn-primary btn-expand" data-bs-toggle="collapse" data-bs-target="#project4Details" onclick="startTypingEffect('project4DetailsText')">
+                            View More <i class="fas fa-angle-down"></i>
+                        </button>
+                        <div id="project4Details" class="collapse mt-3">
+                            <ul id="project4DetailsText" class="typing-text">
+                                <li>Achieved a remarkable 90% reduction in manual data entry errors.</li>
+                                <li>Resolved real-time issues related to API communication between Amazon Lex and Facebook, leading to a 98% uptime for the system.</li>
+                                <li>Increased user retention by 15% through personalized order recommendations generated by the chatbot.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+      <!-- Technical Skills Section with Logos -->
+<!-- Technical Skills Section with Logos -->
+<section id="skills" class="technical-skills-section py-5">
+    <div class="container">
+        <h2 class="text-center section-title" data-aos="fade-up">Technical Skills</h2>
+
+        <!-- Cloud Services -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Cloud Services</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://img.icons8.com/?size=100&id=wU62u24brJ44&format=png&color=000000" alt="AWS Logo" class="tech-logo">
+                <h5>AWS</h5>
+            </div>
+        </div>
+
+        <!-- Containerization and Deployment Tools -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Containerization & Deployment Tools</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://img.icons8.com/color/96/docker.png" alt="Docker Logo" class="tech-logo">
+                <h5>Docker</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://img.icons8.com/color/96/kubernetes.png" alt="Kubernetes Logo" class="tech-logo">
+                <h5>Kubernetes</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://img.icons8.com/color/96/terraform.png" alt="Terraform Logo" class="tech-logo">
+                <h5>Terraform</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="400">
+                <img src="data:image/png;base64,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" alt="Amazon EKS Logo" class="tech-logo">
+                <h5>Amazon EKS</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://icon.icepanel.io/AWS/svg/Containers/Elastic-Container-Service.svg" alt="Amazon ECS Logo" class="tech-logo">
+                <h5>Amazon ECS</h5>
+            </div>
+        </div>
+
+        <!-- Infrastructure as Code (IaC) -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Infrastructure as Code (IaC)</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://img.icons8.com/color/96/terraform.png" alt="Terraform Logo" class="tech-logo">
+                <h5>Terraform</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA3lBMVEX///91nD5LYSxIXSs8SSm3yp1sli01UQDV4Mh3nz9vmDI5VAvj5eC8zqhPZy5khTdplSfw9OpdcEQ5RShCWSE/Tio4Qyizx5f4+fdCWhyAo0/c5dFceDVBUiolNgCyx5aluIuWs3B6n0R5iGaIqV1rjjorOw+WqXyYtHOct3uYoYygqpQ+VRumvYiqs6C0u6rAxrnM0cbF1LJneVHn6eSBjm8tSwBGWSteezU0Qh4gMABgfjaCiHm3urKSmIpRXEKfpJlkbVh0e2np7uGAlGVug1O/y69keEiZrX+NmX7Nl8LXAAAD8klEQVR4nO3ca1PaQBiG4ZxAiaCRY0AjoohgRQ7SIrWtWrXW//+HuptwCEk2CWqb3fS5vzmJM7lmX2YcxryShBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRQcpkXvf2kn+FvZn6qX+pGP7VG86peV1RZTq2R+hQqJMZsCo2Oby6k51gzk36kD22gOL6lkJ5jioyD+sLnElJjJh3G1fl5hHRWM0k/3fsbKjuKwhLScywk/YTvy+vzCQU3DoteX4BQlrO6oMZRgC9QSIzyOOmn3bxgH0MooHF0HexjConxRCAj8ZUZQLaQGreTfvJ45UN8oUJibAhgzJ+G+SKEsmzwbsyfboX6IoWcn+Mk0hdDyPE5Tj5H+2IJqfEgaY2/yWscX0whMbZ5M75u1aN1Gwipka+vAb7E820glA2+Po1bHy/MpkKYy6VAqE4rFYYwd1g5PMuxlGIIVUsraRpbWCpVtd294KMUQDi1NKcQIblaqpamNwFIzoVkNrVl4UIbWbV888qzULUqJU3bQOgoPfPKrXBqf/RWzTpHHZbw5mtnprmRVfV2ieRSSA+vtK7Tvn2fTHaChfrYHP64O+rMXExnXnkV3t4e7lrkGauEOSO6ux/DCb2YZwnt79jM0f0DOeeFsmJZ1m6OT6G6l6PJZwQ6fbgfLb+yDxc6t9z/rFjTqercxLFw/vnK5Qz3n80xhKTi6ibuhSQIIYTw3wchhBKEiQchhBKEiQchhBKEiQchhBKEiQchhBKEiQchhBKEiQchhBKEiQchhKRiWQyhruvySbvVHT+u3i2MI9zfPn96LiplEs/CRrvV6zczdrVaYXuujBLuH4wzzZrzW8cUyqtQUZ7PM2vZSkli/sdQwdbV5rpF/daJzKuQDNnL07EHWSv8qjOEfZ+u1mvLunOVT6GNVDzIzHE5WCi31u9rdhu6vrzIrdBBrs1rLCGZTd19jWuhrbx8Oa/FFq5mUxyhjSw68xouXJ9NoYTzef3NFnb9syma0FG+uH5aEzb8symicL3/7Y0SgYSMN7ffIczqj0mj1mO9nf5Goc7jFoJ4xlhCLn00/xaMNwm53pQxVKJetIwUcr/RJcoYIeTeRxuEGkOFwmxWGpTZxhChbjTF8NHcm6FiComPr1ebo7piGBlCIbfUBRsDhUL6JHtLot8YIBTVRzMvdrxG/yYsQ+xtmOaFZ9mCd5uZ0ePsD+zN8xg9G+m6wvtopnspiFtotFLho7kWn6hp9NGWy2sWQqOdKh9tblTnPt7Wz3xIeWpU0+uj0UVZafbR8te8rrlCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYRQmvoDIbB9FhpDGjMAAAAASUVORK5CYII=" alt="AWS CloudFormation Logo" class="tech-logo">
+                <h5>AWS CloudFormation</h5>
+            </div>
+        </div>
+
+        <!-- CI/CD Tools -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">CI/CD Tools</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://img.icons8.com/color/96/jenkins.png" alt="Jenkins Logo" class="tech-logo">
+                <h5>Jenkins</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://img.icons8.com/color/96/gitlab.png" alt="GitLab CI Logo" class="tech-logo">
+                <h5>GitLab CI</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://img.icons8.com/color/96/github.png" alt="GitHub Logo" class="tech-logo">
+                <h5>GitHub</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://img.icons8.com/color/96/git.png" alt="Git Logo" class="tech-logo">
+                <h5>Git</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://img.icons8.com/color/96/bitbucket.png" alt="Bitbucket Logo" class="tech-logo">
+                <h5>Bitbucket</h5>
+            </div>
+        </div>
+
+        <!-- Scripting and Automation -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Scripting & Automation</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://img.icons8.com/color/96/bash.png" alt="Bash Logo" class="tech-logo">
+                <h5>Bash</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://img.icons8.com/color/96/python.png" alt="Python Logo" class="tech-logo">
+                <h5>Python</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://img.icons8.com/color/96/powershell.png" alt="PowerShell Logo" class="tech-logo">
+                <h5>PowerShell</h5>
+            </div>
+        </div>
+
+        <!-- Configuration Management -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Configuration Management</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/chef-benefits.png?fit=1024%2C512&ssl=1" alt="Chef Logo" class="tech-logo">
+                <h5>Chef</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="data:image/jpeg;base64,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" alt="Puppet Logo" class="tech-logo">
+                <h5>Puppet</h5>
+            </div>
+        </div>
+
+        <!-- Front-End Frameworks -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Front-End Frameworks</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="data:image/png;base64,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" alt="Angular Logo" class="tech-logo">
+                <h5>Angular</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAADRCAMAAAAquaQNAAAAUVBMVEX///9h2vtZ2ftQ1/to2/u+7v31/P/u+v627P3C7/3L8f3g9/7z/P993/yg5/z5/f/W9P6t6v2I4vze9v5y3fuR5Pzo+f7S8/6b5vx83/yp6f22NKMxAAAOIUlEQVR4nOVd2ZqrIAweQetWlzrVLu//oMdukkCQTZ0z438x37RVJBCSEJL49RWMMuvj6I2qzofwFgGGvK4+jcd9Vi7auBfSO+OMRRPY+LEvFmq86NXG7+lCjfvh2HPQIdCxvg1uu+0RtVPjvD8u0HNPZBS9735FWRPQcpNFM21ni1Hg2Kubrk/vjtUHz5YPtZbcV9O3kNH0RhrN9upFs0/PGgO9j5ajH1jNqalXL5pPzg2fjPQ+W96c5KNNt56z4Sa4CyPnfBr2XTK+iC07FkW8sp+OtOK2zbJ4ReoIXDHBjI+s+PhD6xNb1iZl/9jmp3X8/XVVCiW0cCoYr5KXoZW2WUcpUXa2McSGM3En413WvphkSCpENA/X+faAneIdJudCWSUWKjRTGXq0Ni7omqFDFy1K03znAEk8V3/PY6X3JhVKKHceU02Dltl2lggk+Ju8or3JNDM2x4Stshb4jb7+G5K8AC1WSETv+EV30bdCM79rW7wr197okRxxEdeyJJASW8TikfXMZRdZg7GK5uymki+MtQM5ohZXb6ShIF/NXylrGxZRMnuIZFVnWJ+AFbScsCjEGDNCtCAcOolduWqBFfIlncmaykUH5nhsOYAZMV9cSCJJsUZOmGDGLKxScLkXBY4opy5aaYdGmmbeo5976dfOZrcltCPfwg0EHmfnjMilWazAb5LM4nbC9+g26KHopk7eLO9IsdBm8WceG/kH2z3Hbbql86DAFUJs2I8v5l0WvZjjiIW0xO9zEHy2wUJOBUc5qIZE4uyHlhq8OPqJb7Gy1vcMXMTDXG4rscweJU6J5505ySAx7HO2yjIQDHV2uu+A94IswR/Pbi6Ns8fS8sVkfzD7ZfdCh2lEH1wFUD/1Yn0bZOo3c3ba1TqXDnfu9mnqxfrCWvCTycRUQWz6nwS7c2buubZ8IDjRw+ki29Avgj2OqVqxKNxvdsTUZy8Dr1VJ9nJXCUHvpDG8IB7lpQlLZe/vZRmn21HciEf5HfENEsV+x83CsuZrH0EFP6qJEcGxZyuhA2+PYIoxwb4k/yKKFS8881Ivv4fiTibY04bYkGLwKI/DvatKsN8B0mE7ydWEaKeTxuZyP2ROt6MY6GNnvYIsLnRm5mx1DT9igbj6ipHxwdExhLMZInzm6ztBxCQ57sUPaFYT7BZxPfEXfon1jyW8905QET9XLlrVjh3Pnd2L/hD7Y7c9HtRLb+kMJbejjso23B9f/bwPJ0jdx2MNvdVuDgbhiVk/NsLP+wCOQGHMCvRX6w9mCQR4Ypzh5X1IkZQSGrRB0sxBwYd4YlwhvA8OmhBJLajHB0/pJZTT+uEvqYdFC6WWZG1Aq8R+nRxDLD9nuA8vdOgp6w6KNGsXnxejeWPiUNslVM5PI2IAS9sr2dAAgWLSTj0h6UR1EC5yZrcvqDdUx19f94mCynzxl2R6UEv/6L6Up9QJpo8fWg6F20kminajVz506dpZcqILS6VkzGFwkpPlnNT64OS4lNOALasPhLB2ClKZ41jkDDI3WmwqqqG9Y15EPSSlLNv2UhR5niRJlmXj3zwvikvbliUcGPOZ5d3H7gvA1VZ0NSkODXgkL5HAgW48SQ0SWwiubWKscxNPpW1xunYxl2PAbcHGO+PuespbjaAQ62p9q/oBILokKZO2Sf2g9DlxXsQCsp+TP1JeJzLh5caCCw7xFKxybLPr+UVqIKUU5Zyfr1k76fJsY8EFNvJPIXO8nDpGZ0gsSzhn3enymG5h9dnZQOEA6jPpo9WJlclOxOf13QEvgAP6zYiFZIt/N8sNsU5KWhkbLeNj3of1E6nisKb6fPXM3CE7k1nBJhL5EyyKz7eq67r+hfG/6naOo8/PHi3zc7aihhpOsY9NwfKiLYejIfvnOJRtkfs0z+PTKkQfH7NrM+qPdLsz+MbpGA0dxt10eYEE0dnS7F1U5pzgp6XQn4ryAAxRVy8F2EWNJuShLE792YZuxqsFt8rp3fDEF63Z5WMNIq+G2/ku9BFNztL0Y9EZRvy+DHdfDNM7Co86xwY2mCjno2HA1xJ7lHk9kj3flSo8+Dg3CatY9VnoO22D+eEq5VghmWYq2dEBmVluEOEg0JXnHrMA+Vr1pB2M1g8LCLnW0juuW/G/EuwPsuyoxFUjQO6M6iBOoIWr7Z4fzbkmo3+ktm6B/0rev4CjJOZ3nA0Sc5UN8E08+KutdUVDWOQ+1N90oYBJ3YuJlNka9MnzUAieREpjJpj6Nf1ao4jFbmEqTU8tF2jdtIRb4Akotnw3cyet8BJMPfm+dUTz3kGGJHQFgxqKZXEFngZwp/+ZEBDIWHjdyO/Lmq7YYJtPdCBKVKgmjfBoIt69g+nx372CUwrkIgbJVpIXkzQK+c3K9izUWxmvlRUJ2BpIRrAEnXNlIICfGw5opjK1eDRRHIfZGEBXtehBRAp70TzgXmg+BNVuoo0YkN1O3ZWp6oWbPNqNGg0ca4YJSOtpfUNuDEu9yqjVUUqSWkWhqBh2nh35QZYAM2V5qMcDiTMrtoZxK1y0s3Y/1RQ1yDIUmhmbeY6ctsFmizGoLJbbiK3hdHv78McNl34vD9nlY06QC0lBIk+bfni+JYJnylk8ILTm55DRYldcYL/CuPHSMRHcKb/vFQ+cXzJysQ1d0KxEMLsZLCagKippCHTWVktYciym2SFVTJmKVojUvVIFGZrkARNsob6rCPWg0ShRAVUPvO6m9dhdkvtgCMxnEVLCM3VA1eCBP1vobsBlDwqvChtiHLU1vVhMPg20d0UjYHNUf5S0jiqxER9YJosiEtO5HeSXoUwdWUQuwavEMKAKUCqsuo07IYItXTU1HPVuXpIaytSRUUBAG/SQoyyjfnGWgrStQYvYOoYf3FWBKSajaOe9NfQogYhdngKpYevAw3kK+C7oYJ7T2BLEbdBFTfkB+vkp1pjhYK8NlqV98AcqzoBug/Pvcu5OniFQLHKhpTS6jeAMJZP1OTYO/g1IMlqrgOXcUlyobSllfBjpfYC4j8iBc8t+gUYGWDhwvbgV+arVHlE8YnWeRM3doE6yY62EhJQvYiRd/cupurek1qNJbL1ACS91/bs6zyjigA/YeVOrsB0VZy4b7BpQC+oo3+rs828I6kCFL+dNrVwYgIwpI3ifAmmbysmd7r4kUATos24E53iEGUgMS6YS2DG1xnLh5msMEDuez4oTUfEeQX9StRpKrDR2TK1ZU5hBfMonCjb5DFdYWSAcU0nlH1ouY41mxCdNPomZSvEln+wWAJStRmqOwm4Z6/ZEcJK9nP5K5kxgNRHIs/SQJdYUkywLV7Kfg1QOJAUuOp/mzNo8kOIAc+EN2SG4vzne3zren6zeoT7ej831mdHV7er7/2ZX72/vtL/98Q59IPvzc/1hXyYkDNk3u/NX7/BMYoFzJzCLv+HcaYdnixucHx/+s/Pj/cUIKKrgT8WBaGTxL4r1mXcM2Mb67DCe62/E7MmxmbMxe3Rcpsao+xtxmV/7i7390sVXK5zxd+Kr/1YMvW0ZznxneRJfO8yF+dpfvtMDe8tpe+A/z1vU5iOvkqsp8KdyUx/wyT++0OaDJaARo7qP1s4/fqDdWY75Az9fR+CS9VZ1BBYskLqzWhFP/EA9kLN9PZDz4vVAnthZzZc30fuq6/PCzmo3vWAb17E2tiqzt8MabD9bZ6//gTp7oiTp9rUUH+t2+1qKhDNg03qZwC2wDcH7q4lqrnv7/cfq3u6vtvH+6lcLntpJjfL91aHf37sGQt4nQcYi//fvk9jfO0P2914YIap38u6f/b3faX/v8Nrfe9r29y6+/b1vcX/v1Nzfe1PFrOzl3bhCE+7l/ccBG7Xf+Y7roPeYZ/RhhrVxKbDhe8z39676Y9ijiBw1L/3SeFj3ngik+EuNZvZyzv0iipVMLz/t8psobjDJsWcr21Ec/KhBmmM/Z2TwwDsgcC+uZJs6Gx9PpNvpY6WaiBvksgORZ+B5YNUWJ0w99fE+FJQJ4m5xoTAF95sdEeJ9WM7m8vLEeCLA+1DTBFunwgL4eWL8ILwPrrku2N7CH1z73ft5YryQefLTAVtbTKqOE7tZ6WJthQVT20AtC2SFEodJjIIe6ynGnER/WPElN4CUIweXgJQO/EwlHLCJ7ZKr800nW60EcZJpz1A4mYhFL3PtiBezJvGaAijV49x/d3TOTrU0ltbsxzBs5B9sJ2zKiNnkbBHkDtpZ1jJHw2PnyouzhVW9geBCKbE2j2s6KaMf866UPMc7m40BGHQvq9wVYFrMFxdSKBtXTlMlDnALp9liGaO6JyZD8yBNMGVDy7Y270yqGVRQW9/+eAAWWJi/MpOC9hi5Gx6kdEFmsrPB6LgnJ3oBZHrPjfFFeQuPJlSmqeQL4zm7AmQJbhET8QDMHdR27fum7P31cTlyOYuI37SzBzPmPAor+sEiREuhl83up1slVpffLIK/FqDFDigqjZBeeayWX6gM2T8yZ48tUymIOSR4C2X8BupYh8XRpacy+s2dI9wFjPd41QxY9i9K0zyQu4rxKnkRnbZZR6VDsbONx3JQvPfPhKYue4dZlwlOJQyozOCBq6xQ+Ct9j65gYMt9sjZ7Ez21jr/fJrZ6grbWlgJe2W/oUqIwhwZsK830wcGS4pnCQCSUsjzahj2ONsMwW0Ru6pZiRptxssquIMvUrYzUOBuM1z5HJA1RrkZuOfoBgsee3WY7NtLry3iHuyGR/7b6YZMGpGx9kxtlQbWbMl2pDxfZvwKOlLXxUKJ9uK5sezLTeWx7owxcDdI7Qx175lIulbxQ9GrjS1ZH8EWZ9dP+sarzZbNThryekiLiPlvAyfMP4tKzfzPV1pIAAAAASUVORK5CYII=" alt="React Logo" class="tech-logo">
+                <h5>React</h5>
+            </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Programming Languages</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp&w=256" alt="Java Logo" class="tech-logo">
+                <h5>Java</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://img.icons8.com/color/96/python.png" alt="Python Logo" class="tech-logo">
+                <h5>Python</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://img.icons8.com/color/96/c.png" alt="C Logo" class="tech-logo">
+                <h5>C</h5>
+            </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Web Development</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://img.icons8.com/color/96/html.png" alt="HTML Logo" class="tech-logo">
+                <h5>HTML</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://img.icons8.com/color/96/css.png" alt="CSS Logo" class="tech-logo">
+                <h5>CSS</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://img.icons8.com/color/96/javascript.png" alt="JavaScript Logo" class="tech-logo">
+                <h5>JavaScript</h5>
+            </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="row text-center mt-4">
+            <h4 class="text-center mb-4">Databases</h4>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://img.icons8.com/color/96/mysql.png" alt="MySQL Logo" class="tech-logo">
+                <h5>MySQL</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://img.icons8.com/color/96/mongodb.png" alt="MongoDB Logo" class="tech-logo">
+                <h5>MongoDB</h5>
+            </div>
+            <div class="col-md-2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://img.icons8.com/color/96/oracle.png" alt="Oracle Logo" class="tech-logo">
+                <h5>Oracle</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+     <!-- Certifications Section -->
+<section id="certifications" class="certifications-section py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title" data-aos="fade-up">Certifications</h2>
+        <div class="row mt-4">
+            <!-- Certification Badge 1 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="cert-badge">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="dfd9a298-9359-426e-a9c5-8d4d99d74a0e" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+                <script async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+            </div>
+            <!-- Certification Badge 2 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="cert-badge">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b5797fab-3966-4917-8347-d1f1a5db9cc1" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+            </div>
+            <!-- Certification Badge 3 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="cert-badge">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f97f9f3a-d77b-4854-a8ce-b1ef72e536fa" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+            </div>
+            <!-- Certification Badge 4 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="cert-badge">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="47d33adc-cd3c-4c09-905c-86193ec2553c" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+            </div>
+            <!-- Certification Badge 5 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="cert-badge">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="87de5469-6c58-4418-a340-423f453ccc95" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+            </div>
+            <!-- Certification Badge 6 -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="cert-badge">
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="30df1881-65a8-47e3-8d1c-4b5ffd0d7ec6" data-share-badge-host="https://www.credly.com"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5" style="background: url('https://your-image-url.jpg') no-repeat center center/cover;">
+    <div class="container">
+        <h2 class="text-center text-white mb-5" data-aos="fade-up">Get In Touch</h2>
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card shadow-lg border-0 p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-lg" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control form-control-lg" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info and Map -->
+            <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body p-4 text-center">
+                        <p class="h4"><i class="fas fa-map-marker-alt"></i> Address</p>
+                        <p>9532 Groveside Lane, Charlotte, NC</p>
+                        <p class="h4"><i class="fas fa-phone-alt"></i> Phone</p>
+                        <p>+1 (704) 831-0340</p>
+                        <p class="h4"><i class="fas fa-envelope"></i> Email</p>
+                        <p><a href="mailto:rbollep1@uncc.edu">rbollep1@uncc.edu</a></p>
+                    </div>
+                    <!-- Embed Google Maps -->
+                    <div id="map" style="width: 100%; height: 350px; border-top: 1px solid #ccc;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7203224848635!2d-80.8526647847479!3d35.35391128026301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88569f1adfb9b85d%3A0xdbbd6346e285c66b!2s9532%20Groveside%20Ln%2C%20Charlotte%2C%20NC%2028216%2C%20USA!5e0!3m2!1sen!2sin!4v1635807975781!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Ramgopalhyndav Bollepalli | 
+                <a href="https://linkedin.com/in/ram-bollepalli" target="_blank" class="text-white"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
+                <a href="mailto:rbollep1@uncc.edu" class="text-white"><i class="fas fa-envelope"></i> Email Me</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
